@@ -1,0 +1,16 @@
+[2024-07-09T18:33:54.210+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pesquisa_industrial_anual_empresas.workspace manual__2024-07-09T18:33:52.341867+00:00 [queued]>
+[2024-07-09T18:33:54.217+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pesquisa_industrial_anual_empresas.workspace manual__2024-07-09T18:33:52.341867+00:00 [queued]>
+[2024-07-09T18:33:54.218+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 1
+[2024-07-09T18:33:54.260+0000] {taskinstance.py:2217} INFO - Executing <Task(PapermillOperator): workspace> on 2024-07-09 18:33:52.341867+00:00
+[2024-07-09T18:33:54.266+0000] {standard_task_runner.py:60} INFO - Started process 195 to run task
+[2024-07-09T18:33:54.270+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'pesquisa_industrial_anual_empresas', 'workspace', 'manual__2024-07-09T18:33:52.341867+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/pesquisa_industrial_anual_empresas/dags.py', '--cfg-path', '/tmp/tmp9v_mx877']
+[2024-07-09T18:33:54.273+0000] {standard_task_runner.py:88} INFO - Job 31: Subtask workspace
+[2024-07-09T18:33:54.323+0000] {task_command.py:423} INFO - Running <TaskInstance: pesquisa_industrial_anual_empresas.workspace manual__2024-07-09T18:33:52.341867+00:00 [running]> on host 049690d4da25
+[2024-07-09T18:33:54.395+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='observatorio@sistemafiea.com.br' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pesquisa_industrial_anual_empresas' AIRFLOW_CTX_TASK_ID='workspace' AIRFLOW_CTX_EXECUTION_DATE='2024-07-09T18:33:52.341867+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-09T18:33:52.341867+00:00'
+[2024-07-09T18:33:54.396+0000] {execute.py:83} INFO - Input Notebook:  /opt/***/dags/pesquisa_industrial_anual_empresas/notebooks/workspace.ipynb
+[2024-07-09T18:33:54.397+0000] {execute.py:84} INFO - Output Notebook: /opt/***/dags/resultado/pesquisa_industrial_anual_empresas_workspace_2024-07-09.ipynb
+[2024-07-09T18:33:56.532+0000] {clientwrap.py:44} INFO - Executing notebook with kernel: python3
+[2024-07-09T18:34:10.900+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/***/models/baseoperator.py:1469 RemovedInAirflow3Warning: Passing 'execution_date' to 'TaskInstance.xcom_push()' is deprecated.
+[2024-07-09T18:34:10.949+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=pesquisa_industrial_anual_empresas, task_id=workspace, execution_date=20240709T183352, start_date=20240709T183354, end_date=20240709T183410
+[2024-07-09T18:34:11.003+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-07-09T18:34:11.023+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check
